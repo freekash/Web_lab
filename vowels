@@ -1,0 +1,69 @@
+<html>
+<head>
+    <style>
+    .w3-container, .w3-panel {
+    padding: 0.01em 16px;
+}
+
+.w3-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+    </style>
+<script>
+function vowel(){
+    var st1 = document.querySelector("input").value;
+    str1.toUpper
+	var pos = st1.search(/[aeouiAEOUI]/);
+	if(pos <0 )
+	alert("pattern not found");
+	else
+	alert("vowel found at "+ (pos+1));
+} 
+	
+function rev(n){
+    var temp = n.split("").reverse().join("");
+    
+	alert(temp);
+}
+</script>
+</head>
+<body>
+
+        <div class="w3-container">
+                <h2>4th program</h2>
+                <form>
+                <div class="w3-panel">
+        
+                  
+                    <p>
+                    <input class="w3-input" type="text" id="str1">
+                    <label>Enter Name/String</label></p>
+                    <p>     
+                            <input type="button"  class="button" onclick="vowel();" value="submit"/> 	 	 	
+                            <input type="button" class="button" onclick="rev(str1.value);" value="Reverse"/> 
+                 </p>
+                </div>
+                        </form>
+                
+              </div>
+
+</body>
+</html>
